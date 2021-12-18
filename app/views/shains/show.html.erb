@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @shain.name %>
+</p>
+
+<p>
+  <strong>Yakushoku:</strong>
+  <%= @shain.yakushoku %>
+</p>
+
+<p>
+  <strong>Kihonkyu:</strong>
+  <%= @shain.kihonkyu %>
+</p>
+
+<%= link_to 'Edit', edit_shain_path(@shain) %> |
+<%= link_to 'Back', shains_path %>

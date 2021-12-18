@@ -1,0 +1,32 @@
+<%= form_with(model: shain) do |form| %>
+  <% if shain.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(shain.errors.count, "error") %> prohibited this shain from being saved:</h2>
+
+      <ul>
+        <% shain.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :yakushoku %>
+    <%= form.text_field :yakushoku %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kihonkyu %>
+    <%= form.number_field :kihonkyu %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
