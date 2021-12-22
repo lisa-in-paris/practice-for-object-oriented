@@ -62,6 +62,9 @@ class ShainsController < ApplicationController
       @shain = Shain.find(params[:id])
     end
 
+    def standup
+    end
+
     # Only allow a list of trusted parameters through.
     def shain_params
       params.require(:shain).permit(:name, :yakushoku, :kihonkyu)

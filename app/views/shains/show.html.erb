@@ -14,6 +14,7 @@
   <strong>Kihonkyu:</strong>
   <%= @shain.kihonkyu %>
 </p>
+<%= link_to '起立を号令', standup_shain_path(@shain) %> |
 
 <%= link_to 'Edit', edit_shain_path(@shain) %> |
 <%= link_to 'Back', shains_path %>
