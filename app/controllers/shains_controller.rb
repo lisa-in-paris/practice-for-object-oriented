@@ -1,5 +1,5 @@
 class ShainsController < ApplicationController
-  before_action :set_shain, only: %i[ show edit update destroy ]
+  before_action :set_shain, only: %i[ show edit update destroy, :standup]
 
   # GET /shains or /shains.json
   def index
