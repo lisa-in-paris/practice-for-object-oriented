@@ -2,5 +2,5 @@
 
 <%= render 'form', shain: @shain %>
 
-<%= link_to 'Show', @shain %> |
+<%= link_to 'Show', @shain.becomes(Shain) %> |
 <%= link_to 'Back', shains_path %>
